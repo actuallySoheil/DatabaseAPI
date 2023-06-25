@@ -57,6 +57,7 @@ Add repository and dependencies to maven.
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>8.0.33</version>
+        <scope>provided</scope>
     </dependency>
             
 </dependencies>
