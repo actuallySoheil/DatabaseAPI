@@ -1,5 +1,5 @@
 # DatabaseAPI
-A simple MySQL and SQLite database API for anyone whos frustrated with the sql's syntax.
+A simple MySQL and SQLite database API for anyone whos frustrated with the sql's syntax for Minecraft plugins.
 
 ### Example Code:
 ```java
