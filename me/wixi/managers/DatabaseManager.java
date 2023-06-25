@@ -22,8 +22,6 @@ public class DatabaseManager {
         this.mysql = plugin.getConfig().getString("database.type").equalsIgnoreCase("MySQL");
         this.database = this.mysql ? new MySQLDatabase(plugin) : new SQLiteDatabase(plugin);
         this.database.connect();
-
-        createTables();
     }
 
     @SneakyThrows
@@ -94,10 +92,6 @@ public class DatabaseManager {
 
         statement.executeUpdate();
         statement.close();
-    }
-
-    private void createTables() {
-        createTable("PhoenixClientAPI", "mods VARCHAR NOT NULL");
     }
 
 }
