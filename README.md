@@ -23,6 +23,45 @@ databaseManager.setIfAbsent("Test", new DatabaseContainer("name", "age"),
 - Use ``get()`` method, to get a row.
 - Use ``setIfAbsent`` method, to set a row if it doesn't exist.
 
+## How to use
+Add repository and dependencies to maven.
+```xml
+<repositories>
+        
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+     </repository>
+        
+</repositories>
+
+<dependencies>
+        
+    <!-- DatabaseAPI -->
+    <dependency>
+        <groupId>com.github.iWixii</groupId>
+        <artifactId>DatabaseAPI</artifactId>
+        <version>LATEST_COMMIT_TAG</version>
+    <dependency>
+
+    <!-- Lombok -->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.26</version>
+        <scope>provided</scope>
+    </dependency>
+            
+    <!-- MySQL-Connector -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.33</version>
+    </dependency>
+            
+</dependencies>
+```
+
 ## Pro TIP:
 Use [SQLite Viewer App](https://sqliteviewer.app/) to see your rows and tables. It's free!
 
