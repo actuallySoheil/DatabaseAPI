@@ -94,4 +94,15 @@ public class DatabaseManager {
         statement.close();
     }
 
+    @SneakyThrows
+    public void delete(String table, UUID uniqueId) {
+        if (!exists(table, uniqueId)) return;
+        
+        val query = "DELETE FROM " + table + " WHERE uniqueId = ?";
+        val statement = prepareStatement(query, uniqueId.toString());
+
+        statement.executeUpdate();
+        statement.close();
+    }
+
 }
