@@ -20,6 +20,7 @@ databaseManager.setIfAbsent("Test", new DatabaseContainer("name", "age"),
 - Use ``createTable()`` method, to create a table.
 - Use ``update()`` method, to update existing row in database table.
 - Use ``exists()`` method, to check if a row exists.
+- Use ``delete()`` method, to delete a row with maching uniqueId.
 - Use ``get()`` method, to get a row.
 - Use ``setIfAbsent`` method, to set a row if it doesn't exist.
 
