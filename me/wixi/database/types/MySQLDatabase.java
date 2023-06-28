@@ -29,7 +29,7 @@ public class MySQLDatabase extends Database {
             );
         } catch (Exception exception) {
             logger.severe("[ERROR] Failed to connect to MySQL server. are the credentials correct?");
-            System.exit(1);
+            this.plugin.getServer().getPluginManager().disablePlugin(this.plugin);
             return;
         }
 
