@@ -24,7 +24,11 @@ public class SQLiteDatabase extends Database {
         val databaseFile = new File(this.plugin.getDataFolder(), "database.db");
 
         if (!databaseFile.exists())
-            if (!databaseFile.createNewFile()) logger.severe("[ERROR] Failed to create database file");
+            if (!databaseFile.createNewFile()) {
+                logger.severe("[ERROR] Khata Dar Sakhtan File Database");
+                this.plugin.getServer().getPluginManager().disablePlugin(this.plugin);
+                return;
+            }
 
         try {
             Class.forName("org.sqlite.JDBC");
