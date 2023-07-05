@@ -38,6 +38,7 @@ public class SQLiteDatabase extends Database {
             );
         } catch (ClassNotFoundException exception) {
             logger.severe("[ERROR] Failed to connect to SQLite server.");
+            return;
         }
 
         logger.info("[INFO] Successfully connected to SQLite.");
