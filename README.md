@@ -49,7 +49,7 @@ Add repository and dependencies to maven.
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.26</version>
+        <version>1.18.28</version>
         <scope>provided</scope>
     </dependency>
             
