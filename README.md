@@ -10,8 +10,8 @@ val databaseManager = new DatabaseManager();
 databaseManager.createTable("Test", "name VARCHAR(40) NOT NULL, age INT DEFAULT 1");
 
 // we set the row if there isn't any matching with that unique id.
-databaseManager.setIfAbsent("Test", new DatabaseContainer("name", "age"), 
-        UUID.fromString("6c1e7658-3ce1-4ed1-bdcc-b0630a0de2fa"), "SomeonesName", 18);
+// use DatabaseContainer to define the columns (no need to put the uniqueId)
+databaseManager.setIfAbsent("Test", new DatabaseContainer("name", "age"), player.getUniqueId(), "SomeonesName", 18);
 ```
 
 ## There are more. (DatabaseManager class)
