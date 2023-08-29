@@ -22,7 +22,7 @@ databaseManager.setIfAbsent("Test", new DatabaseContainer("name", "age"), player
 - Use ``exists()`` method, to check if a row exists.
 - Use ``delete()`` method, to delete a row with maching uniqueId.
 - Use ``get()`` method, to get a row.
-- Use ``setIfAbsent`` method, to set a row if it doesn't exist.
+- Use ``setIfAbsent()`` method, to set a row if it doesn't exist.
 
 ## How to use
 Add repository and dependencies to maven.
