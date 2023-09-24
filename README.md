@@ -40,7 +40,7 @@ Add repository and dependencies to maven.
         
     <!-- DatabaseAPI -->
     <dependency>
-        <groupId>com.github.iWixii</groupId>
+        <groupId>com.github.WixiDevelopment</groupId>
         <artifactId>DatabaseAPI</artifactId>
         <version>LATEST_COMMIT_TAG</version>
     <dependency>
